@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>맥북</title>
+
+    <link
+      href="https://fonts.googleapis.com/css?family=Fira+Sans"
+      rel="stylesheet"
+    />
+    <!-- let's include the css file for bootstrap, then our custom css -->
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="/vendors/bootstrap/css/bootstrap.css"
+    />
+    <link rel="stylesheet" type="text/css" href="/css/main.css" />
+
+    <!-- let's also include these jquery scripts. -->
+    <script src="/vendors/jquery/jquery-3.3.1.min.js"></script>
+    <script src="/vendors/jquery-ui/jquery-ui.min.js"></script>
+  </head>
+
+  <body>
+    <div class="container">
+      <div class="row">
+        <a href="../index.html" class="btn btn-light float-right"> Back </a>
+      </div>
+      <div class="row">
+        <div class="col-12">
+          <h3>맥북 에어 스페이스 그레이 램 16GB/512GB 사양 88코어</h3>
+          <div>정말 멋진 맥북이다.</div>
+          <div>어라, 패스워드가. 걸.려. 있.는.걸.</div>
+          <ul class="list-group">
+            <!-- The link <a> below should go to your first view -->
+            <li class="list-group-item">
+              <img
+                src="../images/macbook.jpg"
+                alt="Workplace"
+                usemap="#nevigate"
+              />
+            </li>
+          </ul>
+
+           <button onclick="myFucntion()">패스워드 입력</button> 
+          <p id="checkAns"></p>
+           
+          <script type="text/javascript">
+            function myFucntion() {
+              var password = prompt("비밀번호를 입력해주세요", "");
+              if (password == "항식드36") location.href = "letter.html";
+              else
+                document.getElementById("checkAns").innerHTML =
+                  "비밀번호가 틀렸습니다.";
+            }
+          </script>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
